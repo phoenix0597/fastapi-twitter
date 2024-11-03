@@ -17,3 +17,10 @@ class UserRead(BaseModel):
     followers: List[str] = []  # Список имен пользователей, кто подписан
 
     model_config = ConfigDict(from_attributes=True)
+
+
+class UserResponse(BaseModel):
+    username: str
+    following: List[str] = []
+
+    model_config = ConfigDict(from_attributes=True)
