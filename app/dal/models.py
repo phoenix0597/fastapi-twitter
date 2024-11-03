@@ -3,7 +3,8 @@ from sqlalchemy import Column, Integer, String, DateTime, ForeignKey, UniqueCons
 from sqlalchemy.orm import relationship, DeclarativeBase
 from sqlalchemy.sql import func
 
-Base = DeclarativeBase()
+class Base(DeclarativeBase):
+    pass
 
 
 class User(Base):
